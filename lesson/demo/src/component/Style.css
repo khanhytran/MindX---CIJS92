@@ -1,0 +1,109 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+/* NAV */
+.nav{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 16px 0px rgba(58, 58, 58, 0.096);
+}
+li{
+    width: 100%;
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+    cursor: pointer;
+    
+
+}
+li a{
+    text-decoration: none;
+}
+.menu{
+    color: white;
+    background-color: #333333;
+}
+.menu a{
+    color: white;
+}
+.menu i{
+    color: white;
+}
+i{
+    color: #EB001B;
+    margin-right: 8px;
+}
+/* BANNER */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.big{
+    width: 70%;
+}
+.small{
+    gap: 30px;
+    width: 28%;
+}
+/* PRODUCT ITEM */
+.item{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px 0px rgba(58, 58, 58, 0.096);
+}
+h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.price{
+    font-size: 16px;
+    font-weight: bold;
+    color: #EB001B;
+}
+p{
+    margin-top: 4px;
+}
+.btn{
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    color: #5494C9;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn i{
+    width: 16px;
+    height: 16px;
+    color: #5494C9;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 100%;
+    border: 1px solid #5494C9;
+}
+img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* TREND PRODUCT */
+.trend_product{
+    margin: 40px 200px;
+}
+.trend_product h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.product_list{
+    display: flex;
+    gap: 10px;
+}
