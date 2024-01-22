@@ -10,42 +10,41 @@ export default function HomePage() {
     // }
     // console.log(value)
 
-    const [input, setInput] = useState("")
-    const [data, setData] = useState(["task1", "task2"])
+    const [input, setInput] = useState("");
+    const [data, setData] = useState(["task1", "task2"]);
     const changeInput = (event) =>{
-        setInput(event.target.value)
+        setInput(event.target.value);
     }
-    const submit = (event)=>{
+    const submit = ()=>{
         // clone lại phần data để có thể push vào
-        let newData = [...data]
+        let newData = [...data];
         // Nếu giá trị rỗng
         if(input == "" || input == null){
-            return alert('No input found!')
+            return alert('No input found!');
         }
         // Check giá trị input đã tồn tại hay chưa
         if(newData.includes(input)){
-            alert("Already exist!")
+            alert("Already exist!");
         }else{
-            newData.push(input)
-            setData(newData)
+            newData.push(input);
+            setData(newData);
+            // Clear the input value after submission
+            setInput("");
         }
-        // Xóa giá trị sau khi nhấn submit
-        let removeInput = document.getElementById('input_text')
-        removeInput.value = ""
     }
     const deleteItem = (item) => {
         // clone lại data
-        let newData = [...data]
+        let newData = [...data];
         // tìm vị trí của phần tử trong mảng
         let indexItem = newData.findIndex((it) => {
             return it == item
-        })
-        newData.splice(indexItem,1)
-        setData(newData)
+        });
+        newData.splice(indexItem,1);
+        setData(newData);
     }
     // Hàm render content
     const renderContent = () => {
-        let arrJSX = []
+        let arrJSX = [];
         for (let i=0; i<data.length; i++){
             arrJSX.push(
                 <div style={{display:'flex'}}>
@@ -53,8 +52,8 @@ export default function HomePage() {
                     <button onClick={() => {deleteItem(data[i])}}>delete</button>
                 </div>
             )
-        }
-        return arrJSX
+        };
+        return arrJSX;
     }
   return (
     <div>
@@ -62,7 +61,7 @@ export default function HomePage() {
         <br />
         <h1>{value}</h1> */}
         <h1>Task List</h1>
-        <input onChange = {changeInput} id='input_text' type="text" />
+        <input value={input} onChange = {changeInput} id='input_text' type="text" />
         <button onClick={() => {submit()}}>submit</button>
         {renderContent()}
     </div>
