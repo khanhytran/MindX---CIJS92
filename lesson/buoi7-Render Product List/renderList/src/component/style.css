@@ -1,0 +1,29 @@
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productItem{
+    width: 19%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productItem img{
+    width: 100%;
+}
+.productItem h5, p{
+    text-align: center;
+}
