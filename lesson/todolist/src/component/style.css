@@ -1,0 +1,70 @@
+.app{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: brown;
+    width: 600px;
+    padding: 20px 40px;
+    border: 10px solid burlywood;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.content>input{
+    width: 100%;
+    padding: 10px;
+    border: 10px solid burlywood;
+    box-sizing: border-box;
+}
+.activeTask{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: burlywood;
+}
+.completedTask{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: rgb(61, 61, 61) !important;
+    color: rgb(129, 129, 129);
+}
+.tab{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 6px 12px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border: none;
+}
+.btn-tab.active{
+    background-color: rgb(255, 58, 58);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+}
+.btn-tab{
+    background-color: brown;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+}
+.nav{
+    gap:10px
+}
+.delete{
+    margin-right: 10px;
+}
+input[type=checkbox]{
+    margin-right: 10px;
+}

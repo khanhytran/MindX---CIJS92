@@ -9,7 +9,7 @@ export default function HomePage() {
         if (value === "C") {
             setInput("");
           } else if (value === "=") {
-            setInput(eval(input));
+            setInput(input+value + eval(input));
           }else {
             setInput(input+value)
           }
